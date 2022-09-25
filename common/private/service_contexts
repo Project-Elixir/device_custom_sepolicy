@@ -6,3 +6,6 @@ pocket                                    u:object_r:pocket_service:s0
 app_lock                                      u:object_r:app_lock_service:s0
 
 customglobalactions                       u:object_r:custom_globalactions_service:s0
+
+# Linearmotor Vibrator
+linearmotor                               u:object_r:linearmotor_vibrator_service:s0
