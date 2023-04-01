@@ -10,3 +10,6 @@ customglobalactions                       u:object_r:custom_globalactions_servic
 
 # Linearmotor Vibrator
 linearmotor                               u:object_r:linearmotor_vibrator_service:s0
+
+# Parallel Space
+parallel                                  u:object_r:parallel_space_manager_service:s0
