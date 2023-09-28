@@ -10,16 +10,16 @@ endif
 endif
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
-    device/evolution/sepolicy/qcom/private
+    device/custom/sepolicy/qcom/private
 
 ifeq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
-    device/evolution/sepolicy/qcom/dynamic \
-    device/evolution/sepolicy/qcom/system
+    device/custom/sepolicy/qcom/dynamic \
+    device/custom/sepolicy/qcom/system
 else
 BOARD_VENDOR_SEPOLICY_DIRS += \
-    device/evolution/sepolicy/qcom/dynamic \
-    device/evolution/sepolicy/qcom/vendor
+    device/custom/sepolicy/qcom/dynamic \
+    device/custom/sepolicy/qcom/vendor
 endif
 
 ifeq (,$(filter msm8937 msm8953 msm8996 msm8998 sdm660 sdm710 sdm845, $(TARGET_BOARD_PLATFORM)))
