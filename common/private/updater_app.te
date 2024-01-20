@@ -1,4 +1,5 @@
 type updater_app, domain, coredomain;
+typeattribute updater_app mlstrustedsubject;
 
 app_domain(updater_app)
 net_domain(updater_app)
@@ -11,8 +12,8 @@ allow updater_app recovery_service:service_manager find;
 allow updater_app system_api_service:service_manager find;
 allow updater_app update_engine_service:service_manager find;
 
-allow updater_app app_data_file:dir create_dir_perms;
-allow updater_app app_data_file:{ file lnk_file } create_file_perms;
+allow updater_app system_app_data_file:dir create_dir_perms;
+allow updater_app system_app_data_file:{ file lnk_file } create_file_perms;
 
 allow updater_app cache_file:dir r_dir_perms;
 
